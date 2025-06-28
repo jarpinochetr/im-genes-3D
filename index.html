@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Barnacle AR</title>
+  <title>Modelo RA Barnacle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
@@ -14,21 +14,39 @@
       height: 100vh;
     }
   </style>
-  <!-- Incluye siempre la librería oficial -->
+  <!-- Cargar model-viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
+
   <model-viewer
     src="compressed_1751113727679_giant_acorn_barnacle_balanus_nubilis.glb"
-    alt="3D model of a barnacle"
+    alt="Modelo 3D de un percebe"
     ar
-    ar-modes="scene-viewer quick-look webxr"
-    camera-controls
+    ar-modes="scene-viewer webxr quick-look"
+    environment-image="neutral"
     auto-rotate
-    shadow-intensity="1">
+    camera-controls
+    shadow-intensity="1"
+    exposure="1"
+    tone-mapping="commerce">
+    
+    <button slot="ar-button" style="
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    ">
+      Ver en tu espacio
+    </button>
+
   </model-viewer>
+
 </body>
 </html>
-
-
-
