@@ -13,6 +13,7 @@
         align-items: center;
         height: 100vh;
       }
+
       model-viewer {
         width: 100%;
         height: 100%;
@@ -21,18 +22,14 @@
   </head>
   <body>
     <model-viewer
-      src="compressed_1751113727679_giant_acorn_barnacle_balanus_nubilis.glb"
+      src="barnacle.glb"
       ar
       ar-modes="scene-viewer webxr quick-look"
       camera-controls
       auto-rotate
       shadow-intensity="1"
       exposure="1"
-      alt="Modelo 3D del balanus"
+      alt="Modelo 3D del barnacle"
     >
-      <button slot="ar-button" style="position: absolute; bottom: 16px; left: 16px;">
-        Ver en Realidad Aumentada
-      </button>
-    </model-viewer>
-  </body>
-</html>
+      <button slot="ar-button" style="
+        position: absolute;
