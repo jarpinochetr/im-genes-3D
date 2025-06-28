@@ -2,31 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Modelo 3D: Balanus nubilus</title>
+    <title>Modelo 3D Barnacle</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: #f0f0f0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="application/octet-stream">
   </head>
   <body>
     <model-viewer
-      src="compressed_1751113727679_giant_acorn_barnacle_balanus_nubilus.glb"
-      alt="Modelo 3D de Balanus nubilus"
+      src="barnacle.glb"
       ar
-      ar-modes="scene-viewer webxr quick-look"
-      environment-image="neutral"
-      auto-rotate
+      ar-modes="scene-viewer webxr"
       camera-controls
-      style="width: 100%; height: 100%; max-width: 800px;"
-    >
+      auto-rotate
+      loading="eager"
+      style="width: 100%; height: 100vh;">
     </model-viewer>
   </body>
 </html>
